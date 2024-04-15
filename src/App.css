@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 12px;
+}
+
+.App-logo {
+  width: 250px;
+  pointer-events: none;
+}
+
+.maintenance-container{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.maintenance-container img{
+  width: 50px;
+  height: 50px;
+}
+.maintenance-container h1{
+  font-weight: 900;
+}
+@media (max-width: 768px) {
+
+  .maintenance-container h1{
+    font-size: 1.75rem;
+  }
+}
