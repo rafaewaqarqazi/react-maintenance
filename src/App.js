@@ -5,7 +5,7 @@ function App() {
   const appLogo = process.env.REACT_APP_LOGO;
   return (
     <div className="App">
-      <img src={appLogo ? `/${appLogo}` : logo} className="App-logo" alt="logo" />
+      <img src={appLogo ? appLogo?.includes('http') ? appLogo : `/${appLogo}` : logo} className="App-logo" alt="logo" />
         <div className='maintenance-container'>
             <img src={'/maintenance.png'} alt='maintenance' />
             <h1>Under Maintenance</h1>
